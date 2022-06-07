@@ -33,7 +33,7 @@ html {
 }
 
 body {
-     color: #14e949f8;
+     color: #666666;
      font-size: 14px;
      font-family: Poppins;
      line-height: 1.80857;
@@ -42,7 +42,7 @@ body {
 }
 
 a {
-     color: #1a16eb;
+     color: #1f1f1f;
      text-decoration: none !important;
      outline: none !important;
      -webkit-transition: all .3s ease-in-out;
@@ -131,7 +131,7 @@ p {
 }
 
 a {
-     color: #191ce9;
+     color: #222222;
      text-decoration: none;
      outline: none !important;
 }
@@ -163,7 +163,7 @@ img {
 .btn-custom {
      margin-top: 20px;
      background-color: transparent !important;
-     border: 2px solid rgb(15, 228, 79);
+     border: 2px solid #ddd;
      padding: 12px 40px;
      font-size: 16px;
 }
@@ -171,14 +171,14 @@ img {
 .lead {
      font-size: 18px;
      line-height: 30px;
-     color: #4ce91d;
+     color: #767676;
      margin: 0;
      padding: 0;
 }
 
 .form-control:focus {
-     border-color: rgb(15, 228, 79) !important;
-     box-shadow: 0 0 0 .2rem darkgreen;
+     border-color: #ffffff !important;
+     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
 
 .navbar-form input {
@@ -274,7 +274,7 @@ button {
 	width: 100%;
 	float: left;
 	font-size: 40pt;
-	color: #0df0b7e8;
+	color: #ff7e1d;
 }
 .lorem_text {
     width: 100%;
@@ -308,21 +308,19 @@ button {
 }
 .about_text {
     width: 60%;
-    float: center;
+    float: left;
     font-size: 20pt;
-    color: #4334cf;
-    text-align: center;
+    color: #1c6aec;
+    text-align: left;
     padding-left: 30px;
     position: absolute;
-    padding-top: 50px;
-    margin-left: 150px;
+    padding-top: 150px;
 }
 .about_img {
     width: 100%;
     float: left;
     position: relative;
     top: -30px;
-
 }
 .about_middle {
     width: 70%;
@@ -331,14 +329,14 @@ button {
     position: ABSOLUTE;
     background-image: url(../images/img-2.png);
     height: auto;
-    margin-top: 340px;
+    margin-top: 200px;
     margin-left: 60px;
 }
 .about_lorem {
     width: 100%;
     float: left;
     font-size: 14px;
-    color: #000000;
+    color: #18191a;
     text-align: left;
     padding-right: 30px;
 }
@@ -427,8 +425,8 @@ button {
 .seemore_bt{
 	width: 15%;
 	margin: 0 auto;
-	background-color: #13d1d1;
-	color: #000000;
+	background-color: #1c6aec;
+	color: #ffffff;
 	text-align: center;
 	font-size: 20px;
 	height: 50px;
@@ -477,7 +475,7 @@ button {
     margin-bottom: 2rem;
 }	
 .email-bt {
-    color: #6dd825;
+    color: #000000;
     width: 100%;
     height: 55px;
     font-size: 18px;
@@ -498,16 +496,16 @@ button {
     text-align: center;
 }
 button.main_bt {
-    background: #1df7c8;
+    background: #f7941d;
     border: none;
-    color: #000000;
+    color: #faf9f9;
     width: 160px;
     height: 58px;
     font-size: 24px;
     padding-top: 3px;
 }
-button.main_bt a { color: #161515; }
-button.main_bt a:hover { color: #161515; }
+button.main_bt a { color: #faf9f9; }
+button.main_bt a:hover { color: #faf9f9; }
 
 .testimonial_section{
 	width: 100%;
@@ -557,7 +555,7 @@ button.main_bt a:hover { color: #161515; }
 .footer_section{
 	width: 100%;
 	float: left;
-	background-color: #041b64;
+	background-color: #051148;
 	height: auto;
 	padding-bottom: 70px;
 	margin-top: 90px;
@@ -568,7 +566,7 @@ button.main_bt a:hover { color: #161515; }
 	width: 100%;
 	float: left;
 	font-size: 26px;
-	color: #0febb4;
+	color: #ffffff;
 	font-weight: bold;
 }
 .footer_menu{
@@ -590,7 +588,7 @@ button.main_bt a:hover { color: #161515; }
 	color: #ffffff;
 }
 .footer_menu li a:hover{ 
-	color: #10e61a;
+	color: #ff7e1d;
 }
 
 .footer_lorem_text {
@@ -604,9 +602,9 @@ button.main_bt a:hover { color: #161515; }
 .input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    background-color: #13e7a0;
+    background-color: #ff7e1d;
     height: 50px;
-    color: rgb(10, 10, 10);
+    color: #fff;
     border: 0px;
 }
 .mb-3, .my-3 {
@@ -619,7 +617,7 @@ button.main_bt a:hover { color: #161515; }
 	float: left;
 	color: #040614;
 	text-align: center;
-	background-color: #12ee9a;
+	background-color: #ffffff;
 	padding: 10px 0px;
 	font-size: 15px;
 }
@@ -691,28 +689,3 @@ button.main_bt a:hover { color: #161515; }
 .footer_padding{
 	margin: 0px;
 }
-
-body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-}
-
-body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: rgba(201, 197, 197, 0.877);
-}
-
-
-
-
