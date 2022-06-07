@@ -33,7 +33,7 @@ html {
 }
 
 body {
-     color: #666666;
+     color: #14e949f8;
      font-size: 14px;
      font-family: Poppins;
      line-height: 1.80857;
@@ -42,7 +42,7 @@ body {
 }
 
 a {
-     color: #1f1f1f;
+     color: #1a16eb;
      text-decoration: none !important;
      outline: none !important;
      -webkit-transition: all .3s ease-in-out;
@@ -131,7 +131,7 @@ p {
 }
 
 a {
-     color: #222222;
+     color: #191ce9;
      text-decoration: none;
      outline: none !important;
 }
@@ -163,7 +163,7 @@ img {
 .btn-custom {
      margin-top: 20px;
      background-color: transparent !important;
-     border: 2px solid #ddd;
+     border: 2px solid rgb(15, 228, 79);
      padding: 12px 40px;
      font-size: 16px;
 }
@@ -171,14 +171,14 @@ img {
 .lead {
      font-size: 18px;
      line-height: 30px;
-     color: #767676;
+     color: #4ce91d;
      margin: 0;
      padding: 0;
 }
 
 .form-control:focus {
-     border-color: #ffffff !important;
-     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+     border-color: rgb(15, 228, 79) !important;
+     box-shadow: 0 0 0 .2rem darkgreen;
 }
 
 .navbar-form input {
@@ -475,7 +475,7 @@ button {
     margin-bottom: 2rem;
 }	
 .email-bt {
-    color: #000000;
+    color: #6dd825;
     width: 100%;
     height: 55px;
     font-size: 18px;
@@ -496,16 +496,16 @@ button {
     text-align: center;
 }
 button.main_bt {
-    background: #f7941d;
+    background: #74f71d;
     border: none;
-    color: #faf9f9;
+    color: #000000;
     width: 160px;
     height: 58px;
     font-size: 24px;
     padding-top: 3px;
 }
-button.main_bt a { color: #faf9f9; }
-button.main_bt a:hover { color: #faf9f9; }
+button.main_bt a { color: #161515; }
+button.main_bt a:hover { color: #161515; }
 
 .testimonial_section{
 	width: 100%;
@@ -555,7 +555,7 @@ button.main_bt a:hover { color: #faf9f9; }
 .footer_section{
 	width: 100%;
 	float: left;
-	background-color: #051148;
+	background-color: #0a40f1;
 	height: auto;
 	padding-bottom: 70px;
 	margin-top: 90px;
@@ -566,7 +566,7 @@ button.main_bt a:hover { color: #faf9f9; }
 	width: 100%;
 	float: left;
 	font-size: 26px;
-	color: #ffffff;
+	color: #032403;
 	font-weight: bold;
 }
 .footer_menu{
@@ -588,7 +588,7 @@ button.main_bt a:hover { color: #faf9f9; }
 	color: #ffffff;
 }
 .footer_menu li a:hover{ 
-	color: #ff7e1d;
+	color: #10e61a;
 }
 
 .footer_lorem_text {
@@ -602,9 +602,9 @@ button.main_bt a:hover { color: #faf9f9; }
 .input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    background-color: #ff7e1d;
+    background-color: #2ce713;
     height: 50px;
-    color: #fff;
+    color: rgb(10, 10, 10);
     border: 0px;
 }
 .mb-3, .my-3 {
@@ -617,7 +617,7 @@ button.main_bt a:hover { color: #faf9f9; }
 	float: left;
 	color: #040614;
 	text-align: center;
-	background-color: #ffffff;
+	background-color: #8be966;
 	padding: 10px 0px;
 	font-size: 15px;
 }
@@ -689,3 +689,14 @@ button.main_bt a:hover { color: #faf9f9; }
 .footer_padding{
 	margin: 0px;
 }
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
