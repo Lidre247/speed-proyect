@@ -92,10 +92,7 @@ $sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, PRODUCTO, CANTIDAD, PROTEINA
                           <label for="email" class="">Correo :</label>
                           <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" required>
                       </div>
-                      <div class="contenido titulo">
-                          <label for="email" class="">Hora de entrega :</label>
-                          <input type="time" class="form-control" id="correo" name="entrega" placeholder="Ingrese la hora de entrega" required>
-                      </div>
+
                       <div id="carrito" class="contenido">
                           <table class="tabla" id="lista-compra">
                               <thead>
@@ -110,14 +107,16 @@ $sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, PRODUCTO, CANTIDAD, PROTEINA
                               </thead>
                               <tbody>
 
-                              </tbody>  
+                              </tbody>
                               <tr>
-                                  <th colspan="4" scope="col" class="" style="visibility:hidden">SUB TOTAL :</th>
-                                  <th scope="col" style="visibility:hidden">
+                                  <th colspan="4" scope="col" class="">SUB TOTAL :</th>
+                                  <th scope="col">
                                       <p id="subtotal"></p>
                                   </th>
-                                  <th colspan="4" scope="col" class="" style="visibility:hidden">IGV :</th>
-                                  <th scope="col" style="visibility:hidden">
+                              </tr>
+                              <tr>
+                                  <th colspan="4" scope="col" class="">IGV :</th>
+                                  <th scope="col">
                                       <p id="igv"></p>
                                   </th>
                               </tr>
