@@ -108,22 +108,12 @@ foreach ($result as $valores){
         </div>
 
         <div class="container-productos" id="lista-productos">
-        <div class="grid-item">
-      <img class="img-responsive" alt="" src="assets/img/guiapix-70XxXA0jmwwU.jpg">
-   <!--     <li><a href="caserito.html">ver</a></li>  -->
-   <button onclick="location.href='caserito.php'">oe szs</button>
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-          </div>
-        </div>
-      </a>
-    </div>
+
           <div class="card">
             <img src="assets/img/guiapix-70XxXA0jmwwU.jpg" class="card-img">
             <h5><?php echo $CASERITO; ?></h5>
             <p>COP <small class="precio"><?php echo $C; ?></small></p>
-            <a href="#" class="button agregar-carrito" data-id="1">Comprar</s></a>
-            <button onclick="location.href='caserito.php'">ver mas</button>
+            <a href="#" class="button agregar-carrito" data-id="1">Comprar</a>
           </div>
           <div class="card">
             <img src="assets/img/descarga (1).jpg" class="card-img">

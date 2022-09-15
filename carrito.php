@@ -6,7 +6,11 @@ $FechaActual=date("Y-m-d H:i:s");
 
 $precio=htmlentities(addslashes($_POST["precio"]));
 
+$nombre=htmlentities(addslashes($_POST["cliente"]));
+
 $prod=htmlentities(addslashes($_POST["prod"]));
+
+$entrega=htmlentities(addslashes($_POST["entrega"]));
 
 $proteina=htmlentities(addslashes($_POST["proteina"]));
 
@@ -43,8 +47,8 @@ foreach ($result as $valores){
    $CR = $valores["CR"];
    }
 
-$sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, PRODUCTO, CANTIDAD, PROTEINA, SOPA, ADICIONES, OBSERVACIONES, COMPROBANTE) 
-                    VALUES ('','','$prod','$cantidad','$proteina','$sopa','','$observaciones','')");
+$sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, NOMBRE, PRODUCTO, ENTREGA, CANTIDAD, PROTEINA, SOPA, ADICIONES, OBSERVACIONES, COMPROBANTE) 
+                    VALUES ('','','$nombre','$prod','$entrega','$cantidad','$proteina','$sopa','','$observaciones','')");
 
 ?>
 
@@ -53,13 +57,13 @@ $sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, PRODUCTO, CANTIDAD, PROTEINA
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vainas Shop</title>
+    <title>alex.com</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
       <div class="menu logo-nav">
-        <a href="index.html" class="logo">Vainas Shop</a>
+        <a href="productos.php" class="logo">alex.com</a>
         <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
         <nav class="navigation">
           <ul>
@@ -84,7 +88,7 @@ $sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, PRODUCTO, CANTIDAD, PROTEINA
               
                   <h2>Realizar Compra</h2>
                   <form id="procesar-pago" action="#" method="POST">
-                      <div class="contenido titulo">
+                           <div class="contenido titulo">
                           <label for="cliente" class="">Cliente :</label>
                           <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Ingrese su nombre" onkeypress="return sololetras(event)" onpaste="return false" required>
                       </div>
@@ -92,7 +96,10 @@ $sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, PRODUCTO, CANTIDAD, PROTEINA
                           <label for="email" class="">Correo :</label>
                           <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" required>
                       </div>
-
+                      <div class="contenido titulo">
+                          <label for="email" class="">Hora de entrega :</label>
+                          <input type="time" class="form-control" id="correo" name="entrega" placeholder="Ingrese la hora de entrega" required>
+                      </div> -->
                       <div id="carrito" class="contenido">
                           <table class="tabla" id="lista-compra">
                               <thead>
@@ -107,16 +114,14 @@ $sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, PRODUCTO, CANTIDAD, PROTEINA
                               </thead>
                               <tbody>
 
-                              </tbody>
+                              </tbody>  
                               <tr>
-                                  <th colspan="4" scope="col" class="">SUB TOTAL :</th>
-                                  <th scope="col">
+                                  <th colspan="4" scope="col" class="" style="visibility:hidden">SUB TOTAL :</th>
+                                  <th scope="col" style="visibility:hidden">
                                       <p id="subtotal"></p>
                                   </th>
-                              </tr>
-                              <tr>
-                                  <th colspan="4" scope="col" class="">IGV :</th>
-                                  <th scope="col">
+                                  <th colspan="4" scope="col" class="" style="visibility:hidden">IGV :</th>
+                                  <th scope="col" style="visibility:hidden">
                                       <p id="igv"></p>
                                   </th>
                               </tr>
@@ -137,6 +142,7 @@ $sql2=$conn->query("INSERT INTO PEDIDOS (ID, TURNO, PRODUCTO, CANTIDAD, PROTEINA
                               <a href="productos.html" class="button" id="volver">Seguir comprando</a>
                               <input type="submit" class="button" id="procesar-compra" onclick="validarCorreo(form.correo.value)"value="Realizar compra">
                       </div>
+                      <input type="button"> <img href="img/efectivo.png" height ="80" width="100" /></button>
                   </form>
 
       </div>
